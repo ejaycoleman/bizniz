@@ -1,19 +1,15 @@
+import { Typography } from "@mui/material";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Bizniz</title>
         <meta name="description" content="Bizniz" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Bizniz!</h1>
-      </main>
+      <Typography variant="h3">Welcome to Bizniz!</Typography>
     </div>
   );
 }
