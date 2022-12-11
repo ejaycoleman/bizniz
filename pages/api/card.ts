@@ -7,12 +7,12 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<BusinessCard>
 ) {
-  const { name, description, email } = JSON.parse(req.body);
+  const { name, description, email, url } = JSON.parse(req.body);
 
   if (req.method === "POST") {
     try {
       const bizCard = await prisma.businessCard.create({
-        data: { name, description, email },
+        data: { name, description, email, url },
       });
       res.status(200).json(bizCard);
     } catch (error) {

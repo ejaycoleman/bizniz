@@ -17,4 +17,5 @@ model BusinessCard {
   name          String
   description   String
   email         String
+  url           String?
 }

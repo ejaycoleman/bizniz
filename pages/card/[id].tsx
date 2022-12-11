@@ -18,6 +18,7 @@ export default function UserCard({
       name={bizCard.name}
       description={bizCard.description}
       email={bizCard.email}
+      url={bizCard.url}
     />
   );
 }
